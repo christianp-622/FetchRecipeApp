@@ -47,7 +47,8 @@ The goal of this project was to allow a user to view a dessert and corresponding
  
 
 ## Demo
-
+![alt text](https://github.com/christianp-622/FetchRecipeApp/blob/main/FetchRecipeApp/Demo/screenshotHome.png?raw=true)
+![alt text](https://github.com/christianp-622/FetchRecipeApp/blob/main/FetchRecipeApp/Demo/screenshotInsights.png?raw=true)
 
 ## Acknowledgment
 I would like to thank Nick from the Swiftful Thinking Youtube Channel and Tunde from the Tundsdev Youtube Channel. They taught me how to properly perform a network request via URLSession and  how to write asynchronous unit tests. 
