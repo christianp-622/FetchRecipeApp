@@ -14,6 +14,8 @@
 		480DE9FF2A1480A9001E385C /* MealInsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480DE9FE2A1480A9001E385C /* MealInsightsView.swift */; };
 		480DEA022A198048001E385C /* LaunchScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480DEA012A198048001E385C /* LaunchScreenManager.swift */; };
 		480DEA042A1980F6001E385C /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480DEA032A1980F6001E385C /* LaunchScreenView.swift */; };
+		48282F892A1B4E5A00C583D9 /* screenshotInsights.png in Resources */ = {isa = PBXBuildFile; fileRef = 48282F882A1B4E5A00C583D9 /* screenshotInsights.png */; };
+		48282F8B2A1B4E6700C583D9 /* screenshotHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 48282F8A2A1B4E6600C583D9 /* screenshotHome.png */; };
 		48AE9ABB2A1359870092766C /* FetchRecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AE9ABA2A1359870092766C /* FetchRecipeAppApp.swift */; };
 		48AE9ABF2A1359890092766C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AE9ABE2A1359890092766C /* Assets.xcassets */; };
 		48AE9AC22A1359890092766C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AE9AC12A1359890092766C /* Preview Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		480DEA002A155398001E385C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		480DEA012A198048001E385C /* LaunchScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenManager.swift; sourceTree = "<group>"; };
 		480DEA032A1980F6001E385C /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		48282F882A1B4E5A00C583D9 /* screenshotInsights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshotInsights.png; sourceTree = "<group>"; };
+		48282F8A2A1B4E6600C583D9 /* screenshotHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshotHome.png; sourceTree = "<group>"; };
 		48AE9AB72A1359870092766C /* FetchRecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AE9ABA2A1359870092766C /* FetchRecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecipeAppApp.swift; sourceTree = "<group>"; };
 		48AE9ABE2A1359890092766C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +124,15 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		48282F872A1B4E0D00C583D9 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				48282F8A2A1B4E6600C583D9 /* screenshotHome.png */,
+				48282F882A1B4E5A00C583D9 /* screenshotInsights.png */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		48AE9AAE2A1359870092766C = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +162,7 @@
 				480DE9F92A145ED2001E385C /* ViewModels */,
 				480DE9F72A145A75001E385C /* Views */,
 				48AE9ABE2A1359890092766C /* Assets.xcassets */,
+				48282F872A1B4E0D00C583D9 /* Demo */,
 				48AE9AC02A1359890092766C /* Preview Content */,
 			);
 			path = FetchRecipeApp;
@@ -283,7 +297,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48282F8B2A1B4E6700C583D9 /* screenshotHome.png in Resources */,
 				48AE9AC22A1359890092766C /* Preview Assets.xcassets in Resources */,
+				48282F892A1B4E5A00C583D9 /* screenshotInsights.png in Resources */,
 				48AE9ABF2A1359890092766C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
