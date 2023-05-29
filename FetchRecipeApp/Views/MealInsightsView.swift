@@ -10,7 +10,6 @@ import SwiftUI
 //  View for instructions and ingredients
 struct MealInsightsView: View {
     
-    //@EnvironmentObject var mealViewModel: MealsViewModel
     let meal: MealInstructionsModel
     
     var body: some View {
@@ -27,8 +26,8 @@ struct MealInsightsView: View {
                     .padding(.bottom)
                     .overlay(
                         screenOverlay(
-                            text:meal.strMeal,
-                            location: meal.strArea ?? "Area could not be found"),
+                            text:meal.name,
+                            location: meal.area ?? "Area could not be found"),
                         alignment: .bottom
                     )
                     .edgesIgnoringSafeArea(.all)
@@ -54,7 +53,7 @@ struct MealInsightsView: View {
     }
     
     var imageView: some View{
-        AsyncImage(url: URL(string:meal.strMealThumb)) { image in
+        AsyncImage(url: URL(string:meal.thumb)) { image in
             image
                 .resizable()
                 
@@ -75,8 +74,8 @@ struct MealInsightsView: View {
                 .font(.largeTitle)
                 .underline()
                
-            ForEach(meal.formattedInstructions!.indices,id: \.self){i in
-                Text("**Step \(i+1)**- \(meal.formattedInstructions![i])\n")
+            ForEach(meal.instructions.indices,id: \.self){i in
+                Text("**Step \(i+1)**- \(meal.instructions[i])\n")
                     .multilineTextAlignment(.center)
                     .padding(.leading)
                     .padding(.trailing)
@@ -92,8 +91,8 @@ struct MealInsightsView: View {
             Text("**You will need:** ")
                 .font(.title3)
             
-            ForEach(meal.filteredIngredients!, id: \.self){ ing in
-                Text(ing)
+            ForEach(meal.ingredients.indices, id: \.self){ i in
+                Text("\(meal.ingredients[i].amount) \(meal.ingredients[i].name)")
                     .multilineTextAlignment(.center)
             }
         }
@@ -134,9 +133,11 @@ struct screenOverlay: View{
     }
 }
 
-
+/*
 struct MealInsightsView_Previews: PreviewProvider {
-    static var previews: some View {
-        MealInsightsView(meal:MealInstructionsModel(strMeal: "Cake", strMealThumb: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg", idMeal: "12345", strArea: "America", strInstructions: "", strIngredient1: "", strIngredient2: "", strIngredient3: "", strIngredient4: "", strIngredient5: "", strIngredient6: "", strIngredient7: "", strIngredient8: "", strIngredient9: "", strIngredient10: "", strIngredient11: "", strIngredient12: "", strIngredient13: "", strIngredient14: "", strIngredient15: "", strIngredient16: "", strIngredient17: "", strIngredient18: "", strIngredient19: "", strIngredient20: "", strMeasure1: "", strMeasure2: "", strMeasure3: "", strMeasure4: "", strMeasure5: "", strMeasure6: "", strMeasure7: "", strMeasure8: "", strMeasure9: "", strMeasure10: "", strMeasure11: "", strMeasure12: "", strMeasure13: "", strMeasure14: "", strMeasure15: "", strMeasure16: "", strMeasure17: "", strMeasure18: "", strMeasure19: "", strMeasure20: "", filteredIngredients: ["ingredient1", "ingredient2", "ingredient3"], formattedInstructions: ["step 1", "step 2", "step3"]))
+    
+        MealInsightsView(meal:)
     }
 }
+*/
+

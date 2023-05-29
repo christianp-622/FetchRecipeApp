@@ -10,11 +10,12 @@ import SwiftUI
 // Card views in the home page
 struct MealRowView: View {
     
-    let meal: MealInstructionsModel
+    let thumb: String
+    let name: String
     @State var tapped: Bool = false
     
     var body: some View {
-        AsyncImage(url: URL(string:meal.strMealThumb)) { image in
+        AsyncImage(url: URL(string:thumb)) { image in
             image
                 .resizable()
                 .scaledToFit()
@@ -26,7 +27,7 @@ struct MealRowView: View {
                     .padding()
             }
         }
-        .overlay(imageOverlay(text:meal.strMeal), alignment:.bottom)
+        .overlay(imageOverlay(text:name), alignment:.bottom)
         .clipShape(RoundedRectangle(cornerRadius:40, style: .circular))
         .overlay( RoundedRectangle(cornerRadius: 40, style:.circular)
             .stroke(Color("borderColor"), lineWidth: 4))
@@ -59,6 +60,7 @@ struct imageOverlay: View{
 
 struct MealRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MealRowView(meal:MealInstructionsModel(strMeal: "Cake", strMealThumb: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg", idMeal: "12345", strArea: "America", strInstructions: "", strIngredient1: "", strIngredient2: "", strIngredient3: "", strIngredient4: "", strIngredient5: "", strIngredient6: "", strIngredient7: "", strIngredient8: "", strIngredient9: "", strIngredient10: "", strIngredient11: "", strIngredient12: "", strIngredient13: "", strIngredient14: "", strIngredient15: "", strIngredient16: "", strIngredient17: "", strIngredient18: "", strIngredient19: "", strIngredient20: "", strMeasure1: "", strMeasure2: "", strMeasure3: "", strMeasure4: "", strMeasure5: "", strMeasure6: "", strMeasure7: "", strMeasure8: "", strMeasure9: "", strMeasure10: "", strMeasure11: "", strMeasure12: "", strMeasure13: "", strMeasure14: "", strMeasure15: "", strMeasure16: "", strMeasure17: "", strMeasure18: "", strMeasure19: "", strMeasure20: "", filteredIngredients: ["ingredient1", "ingredient2", "ingredient3"], formattedInstructions: ["step 1", "step 2", "step3"]))
+        MealRowView(thumb: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg", name: "Cake")
     }
 }
+

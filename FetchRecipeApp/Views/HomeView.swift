@@ -11,6 +11,7 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject var mealViewModel: MealsViewModel
+    @State private var searchText = ""
     
     // Attempted to see how 2 columns looked but did not like it
     let fixedColumns =  [GridItem(.fixed(200)),GridItem(.fixed(200))]
@@ -21,13 +22,16 @@ struct HomeView: View {
                 .edgesIgnoringSafeArea(.all)
             ScrollView{
                 VStack{
-                    ForEach(mealViewModel.meals, id: \.idMeal){ meal in
-                        NavigationLink(destination:MealInsightsView(meal:meal)) {
-                            MealRowView(meal:meal)
+                    ForEach(mealViewModel.meals, id: \.id){ meal in
+                        NavigationLink(destination:
+                                        MealInsightsView(
+                                            meal:meal)) {
+                            MealRowView(thumb: meal.thumb, name: meal.name)
                                 .shadow(radius:10, x:1, y:4)
                                 .padding(20)
                         }
                     }
+                    
                 }
             }
             .navigationTitle("Dessert Delights")
@@ -45,6 +49,10 @@ struct HomeView: View {
                 }
             }
         }
+    }
+    
+    var searchResults: [MealInstructionsModel] {
+        return searchText.isEmpty ? mealViewModel.meals : mealViewModel.meals.filter({$0.name.contains(searchText)})
     }
     
     var toolbarMenu: some View {

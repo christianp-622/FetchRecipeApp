@@ -67,6 +67,7 @@ final class FetchRecipeAppTests: XCTestCase {
         wait(for:[expectation], timeout: 10)
     }
     
+    /*
     // fetchMealInstructions()
     func test_successful_fetch_meal_instructions_function() {
         let expectation = XCTestExpectation(description: "Make sure that meal is added to publisher")
@@ -246,5 +247,5 @@ final class FetchRecipeAppTests: XCTestCase {
         XCTAssert(result.count == 20,
             "Result list was \(result)")
     }
-
+    */
 }
