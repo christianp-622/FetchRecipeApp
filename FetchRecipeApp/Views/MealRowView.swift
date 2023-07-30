@@ -9,10 +9,8 @@ import SwiftUI
 
 // Card views in the home page
 struct MealRowView: View {
-    
     let thumb: String
     let name: String
-    @State var tapped: Bool = false
     
     var body: some View {
         AsyncImage(url: URL(string:thumb)) { image in
@@ -51,8 +49,10 @@ struct imageOverlay: View{
                 .minimumScaleFactor(0.2)
                 .lineLimit(1)
                 .foregroundColor(.white)
+                
                 .padding(.leading)
                 .padding(.trailing)
+                
         }
         .cornerRadius(5.0)
     }

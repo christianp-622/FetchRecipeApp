@@ -9,20 +9,20 @@ import SwiftUI
 
 @main
 struct FetchRecipeAppApp: App {
-    
-    @StateObject var mealViewModel: MealsViewModel = MealsViewModel()
+    @StateObject var featuredMealViewModel: FeaturedMealViewModel = FeaturedMealViewModel()
+    @StateObject var catsViewModel: CategoriesViewModel = CategoriesViewModel()
     @StateObject var launchScreenManager = LaunchScreenManager()
-  
-    
+
     var body: some Scene {
         WindowGroup {
             ZStack{
                 NavigationView{
-                    HomeView()
-                        
-                    
+                    HomeView3()
                 }
-                .environmentObject(mealViewModel)
+                .environmentObject(featuredMealViewModel)
+                .environmentObject(catsViewModel)
+              
+                
                 
                 if launchScreenManager.state != .completed{
                     LaunchScreenView()
@@ -32,8 +32,6 @@ struct FetchRecipeAppApp: App {
                                     launchScreenManager.dismiss()
                                 }
                         }
-                       
-                    
                 }
             }
             .environmentObject(launchScreenManager)

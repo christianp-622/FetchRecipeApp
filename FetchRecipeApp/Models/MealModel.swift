@@ -23,13 +23,14 @@ struct apiMealResponse:Codable {
     let meals: [MealModel]
 }
 
+
+
+// Meal insights Model
 struct apiMealInstructionsResponse: Decodable {
     let meals: [MealInstructionsModel]
 }
 
-
-// I could not think of any better way
-struct MealInstructionsModel: Decodable {
+struct MealInstructionsModel: Decodable, Identifiable {
     let id:String
     let name: String
     let thumb: String

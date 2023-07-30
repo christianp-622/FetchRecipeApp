@@ -24,7 +24,8 @@ struct Endpoint{
     static func filterByCategory(matching query: String) -> Endpoint {
         return Endpoint(
             path: "/api/json/v1/1/filter.php",
-            queryItems: [URLQueryItem(name:"c", value: query)])
+            queryItems: [URLQueryItem(name:"c", value: query)]
+        )
     }
     
     // Lookup random meal
@@ -39,14 +40,24 @@ struct Endpoint{
     static func filterByArea(matching query: String) -> Endpoint {
         return Endpoint(
             path: "/api/json/v1/1/filter.php",
-            queryItems: [URLQueryItem(name:"a", value: query)])
+            queryItems: [URLQueryItem(name:"a", value: query)]
+        )
     }
    
     // Filter by main ingredient
     static func filterByIngredient(matching query: String) -> Endpoint {
         return Endpoint(
             path: "/api/json/v1/1/filter.php",
-            queryItems: [URLQueryItem(name:"i", value: query)])
+            queryItems: [URLQueryItem(name:"i", value: query)]
+        )
+    }
+    
+    // Return list of categories
+    static func retrieveCategories() -> Endpoint {
+        return Endpoint(
+            path: "/api/json/v1/1/categories.php",
+            queryItems:nil
+        )
     }
 }
 

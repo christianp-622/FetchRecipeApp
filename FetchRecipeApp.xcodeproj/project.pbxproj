@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		480DE9F32A144E23001E385C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480DE9F22A144E23001E385C /* HomeView.swift */; };
+		480DE9F32A144E23001E385C /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480DE9F22A144E23001E385C /* MealsView.swift */; };
 		480DE9F52A14518D001E385C /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480DE9F42A14518D001E385C /* MealModel.swift */; };
 		480DE9FB2A145F12001E385C /* MealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480DE9FA2A145F12001E385C /* MealsViewModel.swift */; };
 		480DE9FD2A14742A001E385C /* MealRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480DE9FC2A14742A001E385C /* MealRowView.swift */; };
@@ -19,6 +19,18 @@
 		48282F8E2A2415F700C583D9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48282F8D2A2415F700C583D9 /* Endpoint.swift */; };
 		48282F902A2416F900C583D9 /* MealError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48282F8F2A2416F900C583D9 /* MealError.swift */; };
 		48282F922A246AD300C583D9 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48282F912A246AD300C583D9 /* EndpointTests.swift */; };
+		483FEC042A396CED00854CD2 /* HomeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC032A396CED00854CD2 /* HomeView2.swift */; };
+		483FEC062A396E1A00854CD2 /* MenuPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC052A396E1A00854CD2 /* MenuPickerView.swift */; };
+		483FEC082A3ACF1000854CD2 /* MenuPickerOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC072A3ACF1000854CD2 /* MenuPickerOption.swift */; };
+		483FEC0B2A3AD24000854CD2 /* MenuPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC0A2A3AD24000854CD2 /* MenuPickerRow.swift */; };
+		483FEC0D2A3AD35200854CD2 /* MenuPickerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC0C2A3AD35200854CD2 /* MenuPickerList.swift */; };
+		483FEC0F2A3C234900854CD2 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC0E2A3C234900854CD2 /* CategoryModel.swift */; };
+		483FEC112A3D548000854CD2 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC102A3D548000854CD2 /* CategoriesViewModel.swift */; };
+		483FEC132A3D5B4600854CD2 /* CategoriesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC122A3D5B4600854CD2 /* CategoriesRow.swift */; };
+		483FEC162A3EC50F00854CD2 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC152A3EC50F00854CD2 /* CategoryItem.swift */; };
+		483FEC1A2A3ED26C00854CD2 /* HomeView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC192A3ED26C00854CD2 /* HomeView3.swift */; };
+		483FEC1C2A3FADE800854CD2 /* FeaturedMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC1B2A3FADE800854CD2 /* FeaturedMeal.swift */; };
+		483FEC1E2A4D2B8800854CD2 /* FeaturedMealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483FEC1D2A4D2B8800854CD2 /* FeaturedMealViewModel.swift */; };
 		48AE9ABB2A1359870092766C /* FetchRecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AE9ABA2A1359870092766C /* FetchRecipeAppApp.swift */; };
 		48AE9ABF2A1359890092766C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AE9ABE2A1359890092766C /* Assets.xcassets */; };
 		48AE9AC22A1359890092766C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AE9AC12A1359890092766C /* Preview Assets.xcassets */; };
@@ -45,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		480DE9F22A144E23001E385C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		480DE9F22A144E23001E385C /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
 		480DE9F42A14518D001E385C /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		480DE9FA2A145F12001E385C /* MealsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewModel.swift; sourceTree = "<group>"; };
 		480DE9FC2A14742A001E385C /* MealRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRowView.swift; sourceTree = "<group>"; };
@@ -58,6 +70,18 @@
 		48282F8D2A2415F700C583D9 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		48282F8F2A2416F900C583D9 /* MealError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealError.swift; sourceTree = "<group>"; };
 		48282F912A246AD300C583D9 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		483FEC032A396CED00854CD2 /* HomeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView2.swift; sourceTree = "<group>"; };
+		483FEC052A396E1A00854CD2 /* MenuPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPickerView.swift; sourceTree = "<group>"; };
+		483FEC072A3ACF1000854CD2 /* MenuPickerOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPickerOption.swift; sourceTree = "<group>"; };
+		483FEC0A2A3AD24000854CD2 /* MenuPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPickerRow.swift; sourceTree = "<group>"; };
+		483FEC0C2A3AD35200854CD2 /* MenuPickerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPickerList.swift; sourceTree = "<group>"; };
+		483FEC0E2A3C234900854CD2 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		483FEC102A3D548000854CD2 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		483FEC122A3D5B4600854CD2 /* CategoriesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRow.swift; sourceTree = "<group>"; };
+		483FEC152A3EC50F00854CD2 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		483FEC192A3ED26C00854CD2 /* HomeView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView3.swift; sourceTree = "<group>"; };
+		483FEC1B2A3FADE800854CD2 /* FeaturedMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedMeal.swift; sourceTree = "<group>"; };
+		483FEC1D2A4D2B8800854CD2 /* FeaturedMealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedMealViewModel.swift; sourceTree = "<group>"; };
 		48AE9AB72A1359870092766C /* FetchRecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AE9ABA2A1359870092766C /* FetchRecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecipeAppApp.swift; sourceTree = "<group>"; };
 		48AE9ABE2A1359890092766C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				480DE9F42A14518D001E385C /* MealModel.swift */,
+				483FEC0E2A3C234900854CD2 /* CategoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,10 +130,16 @@
 		480DE9F72A145A75001E385C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				483FEC092A3AD21500854CD2 /* MenuPicker */,
 				480DEA052A1982ED001E385C /* LaunchScreen */,
-				480DE9F22A144E23001E385C /* HomeView.swift */,
+				483FEC192A3ED26C00854CD2 /* HomeView3.swift */,
+				483FEC1B2A3FADE800854CD2 /* FeaturedMeal.swift */,
+				483FEC122A3D5B4600854CD2 /* CategoriesRow.swift */,
+				483FEC152A3EC50F00854CD2 /* CategoryItem.swift */,
+				480DE9F22A144E23001E385C /* MealsView.swift */,
 				480DE9FC2A14742A001E385C /* MealRowView.swift */,
 				480DE9FE2A1480A9001E385C /* MealInsightsView.swift */,
+				483FEC032A396CED00854CD2 /* HomeView2.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +149,8 @@
 			children = (
 				48282F8C2A24159500C583D9 /* Helpers */,
 				480DE9FA2A145F12001E385C /* MealsViewModel.swift */,
+				483FEC102A3D548000854CD2 /* CategoriesViewModel.swift */,
+				483FEC1D2A4D2B8800854CD2 /* FeaturedMealViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -147,6 +180,17 @@
 				48282F8F2A2416F900C583D9 /* MealError.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		483FEC092A3AD21500854CD2 /* MenuPicker */ = {
+			isa = PBXGroup;
+			children = (
+				483FEC052A396E1A00854CD2 /* MenuPickerView.swift */,
+				483FEC0C2A3AD35200854CD2 /* MenuPickerList.swift */,
+				483FEC0A2A3AD24000854CD2 /* MenuPickerRow.swift */,
+				483FEC072A3ACF1000854CD2 /* MenuPickerOption.swift */,
+			);
+			path = MenuPicker;
 			sourceTree = "<group>";
 		};
 		48AE9AAE2A1359870092766C = {
@@ -343,14 +387,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				480DE9F52A14518D001E385C /* MealModel.swift in Sources */,
+				483FEC0D2A3AD35200854CD2 /* MenuPickerList.swift in Sources */,
 				48282F8E2A2415F700C583D9 /* Endpoint.swift in Sources */,
+				483FEC1C2A3FADE800854CD2 /* FeaturedMeal.swift in Sources */,
+				483FEC162A3EC50F00854CD2 /* CategoryItem.swift in Sources */,
 				480DE9FF2A1480A9001E385C /* MealInsightsView.swift in Sources */,
+				483FEC082A3ACF1000854CD2 /* MenuPickerOption.swift in Sources */,
+				483FEC1E2A4D2B8800854CD2 /* FeaturedMealViewModel.swift in Sources */,
 				480DEA022A198048001E385C /* LaunchScreenManager.swift in Sources */,
-				480DE9F32A144E23001E385C /* HomeView.swift in Sources */,
+				480DE9F32A144E23001E385C /* MealsView.swift in Sources */,
 				48282F902A2416F900C583D9 /* MealError.swift in Sources */,
+				483FEC1A2A3ED26C00854CD2 /* HomeView3.swift in Sources */,
+				483FEC042A396CED00854CD2 /* HomeView2.swift in Sources */,
 				480DE9FB2A145F12001E385C /* MealsViewModel.swift in Sources */,
+				483FEC112A3D548000854CD2 /* CategoriesViewModel.swift in Sources */,
 				480DE9FD2A14742A001E385C /* MealRowView.swift in Sources */,
 				48AE9ABB2A1359870092766C /* FetchRecipeAppApp.swift in Sources */,
+				483FEC062A396E1A00854CD2 /* MenuPickerView.swift in Sources */,
+				483FEC132A3D5B4600854CD2 /* CategoriesRow.swift in Sources */,
+				483FEC0F2A3C234900854CD2 /* CategoryModel.swift in Sources */,
+				483FEC0B2A3AD24000854CD2 /* MenuPickerRow.swift in Sources */,
 				480DEA042A1980F6001E385C /* LaunchScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,7 +575,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +605,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

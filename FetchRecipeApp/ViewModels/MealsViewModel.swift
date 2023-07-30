@@ -8,17 +8,17 @@
 import Foundation
 
 
+
 class MealsViewModel: ObservableObject{
     
     @Published var meals:[MealInstructionsModel] = []
     
-    // TODO
-    @Published var searchList: [MealInstructionsModel] = []
-    
+    @Published var searchText: String = ""
     @Published var userError:MealError?
     
-    init(){
-        fetchMealsByCategory(category: "Dessert")
+    init(cat: String){
+        fetchMealsByCategory(category: cat)
+       
     }
     
     // Testing without fetching meals
@@ -41,7 +41,7 @@ class MealsViewModel: ObservableObject{
     }
     
     // Grab the meals for a given category
-    private func fetchMealsByCategory(category: String) {
+   func fetchMealsByCategory(category: String) {
         guard let url = Endpoint.filterByCategory(matching: category).url else{
             self.userError = .invalidEndpoint
             return
@@ -51,8 +51,13 @@ class MealsViewModel: ObservableObject{
             DispatchQueue.main.async { [weak self] in
                 if let data = data{
                     guard let mealResponse = try? JSONDecoder().decode(apiMealResponse.self, from: data) else {return}
+                    var count = 0
                     for meal in mealResponse.meals {
+                        if count > 10 {
+                            break
+                        }
                         self?.fetchMealInstructions(.lookupByID(matching:meal.id))
+                        count += 1
                     }
                 }else {
                     self?.userError = MealError.failedToDecode(url:url)
@@ -75,6 +80,7 @@ class MealsViewModel: ObservableObject{
                     guard let response = try? JSONDecoder().decode(apiMealInstructionsResponse.self, from: data) else {return}
                     let temp = response.meals[0]
                     self?.meals.append(temp)
+                    print(temp.name)
                     self?.sortMealsAtoZ() // I sorted the list after each addition
                 }
                 else{
@@ -92,8 +98,5 @@ class MealsViewModel: ObservableObject{
         meals = meals.sorted(by:{$0.name < $1.name})
     }
     
-    func searchMeal(sub:String) {
-        searchList = meals.filter({$0.name.hasPrefix(sub)})
-    }
     
 }
